@@ -76,7 +76,7 @@ function buildCharts(sample) {
           (a,b) => a.otu_ids - b.out_ids).reverse();
         var otu_10 = otu_sort.slice(0,10)
 
-    var yticks = otu_10
+    var yticks = otu_10.map(otu_10.otu_ids);
 
     // 8. Create the trace for the bar chart. 
        
@@ -84,7 +84,8 @@ function buildCharts(sample) {
       x: sample_values,
       y: yticks,
       text: otu_labels,
-      type: "bar"
+      type: "bar",
+      orientation: "h" 
     };
 
     var barData = [barTrace];
