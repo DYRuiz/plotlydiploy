@@ -77,6 +77,7 @@ function buildCharts(sample) {
         var otu_sort = otu_ids.sort(
           (a,b) => a.otu_ids - b.out_ids).reverse();
         var otu_10 = otu_sort.slice(0,10)
+    console.log(otu_sort);
     console.log(otu_10);
     
     var yticks = otu_10;
