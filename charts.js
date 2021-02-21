@@ -80,7 +80,7 @@ function buildCharts(sample) {
     console.log(otu_sort);
     console.log(otu_10);
     
-    var yticks = otu_10;
+    var yticks = otu_10.text;
     console.log(yticks);
     
     // 8. Create the trace for the bar chart. 
