@@ -77,9 +77,9 @@ function buildCharts(sample) {
         var otu_sort = otu_ids.sort(
           (a,b) => a.otu_ids - b.out_ids).reverse();
         var otu_10 = otu_sort.slice(0,10)
-
-    var yticks = otu_10.map(otu_10.otu_ids);
     console.log(otu_10);
+    
+    var yticks = otu_10;
     console.log(yticks);
     
     // 8. Create the trace for the bar chart. 
