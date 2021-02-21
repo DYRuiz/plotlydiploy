@@ -80,7 +80,7 @@ function buildCharts(sample) {
     console.log(otu_sort);
     console.log(otu_10);
     
-    var yticks = otu_10.text;
+    var yticks = otu_10;
     console.log(yticks);
     
     // 8. Create the trace for the bar chart. 
@@ -97,7 +97,8 @@ function buildCharts(sample) {
 
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-     title: "Top 10 Bacteria Cultures Found"
+     title: "Top 10 Bacteria Cultures Found",
+     yaxis: {tickprefix="OTU "}
     };
 
     // 10. Use Plotly to plot the data with the layout. 
