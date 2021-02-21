@@ -126,7 +126,7 @@ function buildCharts(sample) {
 // 1. Create the trace for the bubble chart.
 var bubbleData = [{
     x: otu_ids,
-    y: samples_values,
+    y: sample_values,
     text: otu_labels,
     mode: 'markers',
     marker: {
