@@ -144,7 +144,8 @@ var bubbleLayout = {
            {range: [2,4]},
            {range: [4,6]},
            {range: [6,8]},
-           {range: [8,10]}
+           {range: [8,10]},
+           {color: "jets"}
          ]
        },
      }
@@ -154,8 +155,7 @@ var bubbleLayout = {
 // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
       width: 600,
-      height: 400,
-      colorscale = "Jets"
+      height: 400
     };
 
 // 6. Use Plotly to plot the gauge data and layout.
