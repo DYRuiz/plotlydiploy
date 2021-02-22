@@ -4,9 +4,9 @@ html,
     background-image: url("/plotlydiploy/images/Vegan-Burger-And-Meat.jpeg");
     background-size: 80% 80%;
     text-align: center;
-    font-family: 'Roboto', san-serif;
 }
 
+h1 {font-family: 'Roboto', sans-serif}
 
 .well {
     background-color: white;
