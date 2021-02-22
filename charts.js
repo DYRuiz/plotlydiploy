@@ -73,7 +73,7 @@ function buildCharts(sample) {
         var wash = chartSample.wfreq;
    //console.log(otu_ids);
    //console.log(otu_labels);
-  
+  console.log(wash)
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
@@ -128,7 +128,7 @@ var bubbleLayout = {
      var gaugeData = [{
        type: "indicator",
        mode: "gauge+number",
-       value: wash.parseFloat(),
+       value: parseFloat(wash),
        title: {text: "Belly Button Washing Frequency", font: {size:16}, text:"Scrubs per Week", font: {size: 12}},
        gauge:{
          axis: {range: [null,10], tickcolor: "black"},
