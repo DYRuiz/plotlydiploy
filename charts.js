@@ -93,7 +93,7 @@ function buildCharts(sample) {
       y: otu_10.map(otu_id=> `OTU ${otu_id}`).reverse(),
       text: otu_labels,
       type: "bar",
-      color: ""
+      color: "darkcyan",
       orientation: "h" 
     }];
 

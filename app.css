@@ -3,7 +3,20 @@ html, body{
 
 }
 
-h1 {
-    background-color: darkcyan;
+.jumbtron {
+    background-color:floralwhite;
 
+}
+
+.well {
+    background-color: floralwhite;
+}
+
+.panel-body {
+    background-color: floralwhite;
+
+}
+
+.h3 {
+    background-color: darkcyan;
 }
