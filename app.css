@@ -1,7 +1,7 @@
 html,
 
 .jumbotron {
-    background-image: url("/plotlydiploy/images/Vegan-Burger-And-Meat.jpeg");
+    background-image: url("/images/Vegan-Burger-And-Meat.jpeg");
     background-color: white;
     background-size: 80% 80%;
     background-repeat: no-repeat;
@@ -21,10 +21,12 @@ h1 {font-family: "Permanent Marker", cursive}
 }
 
 .footer {
-    background-image: url("/plotlydiploy/images/wimpy_burger.png");
-    background-size: 25%,25%;
-    background-repeat:repeat-x;
+    background-image: url("/images/wimpy_burger.png");
     position: fixed;
+    background-size: cover;
+    background-repeat: repeat;
+    right:0;
     bottom: 0;
-    height: 100px,
-}
+    height: 150px;
+    width:150px;
+}   
