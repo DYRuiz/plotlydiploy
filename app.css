@@ -1,22 +1,15 @@
-html, body{
-    background-color: lightcyan;
+html, 
 
-}
-
-.jumbtron {
-    background-color:floralwhite;
+.jumbotron {
+    background-color:lightsteelblue;
 
 }
 
 .well {
-    background-color: floralwhite;
+    background-color: white;
 }
 
 .panel-body {
-    background-color: floralwhite;
+    background-color: white;
 
-}
-
-.h3 {
-    background-color: darkcyan;
 }
