@@ -2,6 +2,7 @@ html,
 
 .jumbotron {
     background-image: url("/plotlydiploy/images/Vegan-Burger-And-Meat.jpeg");
+    background-color: white;
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
