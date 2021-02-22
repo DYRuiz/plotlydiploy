@@ -93,7 +93,7 @@ function buildCharts(sample) {
       y: otu_10.map(otu_id=> `OTU ${otu_id}`).reverse(),
       text: otu_labels,
       type: "bar",
-      color: "darkcyan",
+      color: '#ff4d4d',
       orientation: "h" 
     }];
 
@@ -114,7 +114,6 @@ var bubbleData = [{
     marker: {
         size: sample_values,
         color: otu_ids,
-        line: {colorscale: 'YiGnBu'}
     },
    type:'scatter'
 }];
@@ -140,12 +139,11 @@ var bubbleLayout = {
          axis: {range: [null,10]},
          bar:{color:"black"},
          steps:[
-           {range: [0,2]},
-           {range: [2,4]},
-           {range: [4,6]},
-           {range: [6,8]},
-           {range: [8,10]},
-           {color: "jets"}
+           {range: [0,2], color: '#ffeee6' },
+           {range: [2,4], color: '#ffccb3'},
+           {range: [4,6], color:'#ffaa80'},
+           {range: [6,8], color:'#ff884d'},
+           {range: [8,10], color:'#ff7733'}
          ]
        },
      }
