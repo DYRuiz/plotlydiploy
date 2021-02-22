@@ -18,3 +18,9 @@ h1 {font-family: "Permanent Marker", cursive}
     background-color: white;
 
 }
+
+.border {
+    background-image: url("/plotlydiploy/images/wimpy_burger.png");
+    background-size: 30%,30%;
+    background-repeat: space;
+}
