@@ -3,10 +3,12 @@ html,
 .jumbotron {
     background-image: url("/plotlydiploy/images/Vegan-Burger-And-Meat.jpeg");
     background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
 
-h1 {font-family: 'Roboto', sans-serif}
+h1 {font-family: "Permanent Marker", cursive}
 
 .well {
     background-color: white;
