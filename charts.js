@@ -70,6 +70,7 @@ function buildCharts(sample) {
         var otu_ids = chartSample.otu_ids;
         var otu_labels = chartSample.otu_labels;
         var sample_values = chartSample.sample_values;
+        var wash = chartSample.wfreq;
    //console.log(otu_ids);
    //console.log(otu_labels);
   
@@ -127,7 +128,7 @@ var bubbleLayout = {
      var gaugeData = [{
        type: "indicator",
        mode: "gauge+number",
-       value: result.wfreq.parseFloat(),
+       value: wash.parseFloat(),
        title: {text: "Belly Button Washing Frequency", font: {size:16}, text:"Scrubs per Week", font: {size: 12}},
        gauge:{
          axis: {range: [null,10], tickcolor: "black"},
