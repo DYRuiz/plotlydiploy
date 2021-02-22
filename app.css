@@ -1,11 +1,10 @@
-html, body {
-    font-family: "Belleza"; font-size: 22px;
-}
+html,
 
 .jumbotron {
-    background-image: url("../images/Vegan-Burger-And-Meat.jpg");
+    background-image: url("images/Vegan-Burger-And-Meat.jpg");
     background-size: 100% 100%;
     text-align: center;
+    font-family: "Belleza";
 }
 
 
