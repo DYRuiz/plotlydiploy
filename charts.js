@@ -131,7 +131,9 @@ var bubbleLayout = {
        type: "indicator",
        mode: "gauge+number",
        value: parseFloat(wash),
-       title: {text: "Belly Button Washing Frequency", font: {size:20}, subtext:"Scrubs per Week", font: {size: 16}},
+       title: {
+         text: "Belly Button Washing Frequency", font: {size:20},
+         text: "Scrubs per Week", font: {size: 16}},
        gauge:{
          axis: {range: [null,10]},
          bar:{color:"black"},
