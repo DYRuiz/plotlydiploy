@@ -81,14 +81,14 @@ function buildCharts(sample) {
           (a,b) => a.otu_ids - b.out_ids).slice(0,10);
     console.log(otu_10);
 
-    //var yticks = (`OTU ${otu_10}`);
+    //var yticks = 
     
     // 8. Create the trace for the bar chart. 
 
     var barData = [{
-      x: sample_values.slice(0,10),
+      x: sample_values.slice(0,10).reverse(),
       y: otu_ids.slice(0,10).map(otu_id=> `OTU ${otu_id}`).reverse(),
-      text: otu_labels,
+      text: [otu_ids,otu_labels],
       type: "bar",
       orientation: "h" 
     }];
