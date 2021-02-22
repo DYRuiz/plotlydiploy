@@ -87,7 +87,7 @@ function buildCharts(sample) {
 
     var barData = [{
       x: sample_values.slice(0,10),
-      y: otu_ids.slice(0,10).map(otu_id=> `OTU ${otu_id}`),
+      y: otu_ids.slice(0,10).map(otu_id=> `OTU ${otu_id}`).reverse(),
       text: otu_labels,
       type: "bar",
       orientation: "h" 
