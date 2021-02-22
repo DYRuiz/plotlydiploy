@@ -59,18 +59,20 @@ function buildCharts(sample) {
   d3.json("samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
         var samplesArray = data.samples;
-        
+        var metadata = data.metadata;
     // 4. Create a variable that filters the samples for the object with the desired sample number.
         var sampleFilter = samplesArray.filter(sampleOne => sampleOne.id == sample);
-        console.log(sampleFilter);
+        var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
+        var result = resultArray[0];
+        //console.log(sampleFilter);
     //  5. Create a variable that holds the first sample in the array.
         var chartSample = sampleFilter[0];
-        console.log(chartSample);
+        //console.log(chartSample);
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
         var otu_ids = chartSample.otu_ids;
         var otu_labels = chartSample.otu_labels;
         var sample_values = chartSample.sample_values;
-        var wash = chartSample.wfreq;
+        var wash = result.wfreq;
    //console.log(otu_ids);
    //console.log(otu_labels);
   console.log(wash)
@@ -87,7 +89,7 @@ function buildCharts(sample) {
     // 8. Create the trace for the bar chart. 
 
     var barData = [{
-      x: sample_values.slice(0,10),
+      x: sample_values.slice(0,10).reverse(),
       y: otu_10.map(otu_id=> `OTU ${otu_id}`).reverse(),
       text: otu_labels,
       type: "bar",
@@ -129,7 +131,7 @@ var bubbleLayout = {
        type: "indicator",
        mode: "gauge+number",
        value: parseFloat(wash),
-       title: {text: "Belly Button Washing Frequency", font: {size:16}, text:"Scrubs per Week", font: {size: 12}},
+       title: {text: "Belly Button Washing Frequency", font: {size:20}, subtext:"Scrubs per Week", font: {size: 16}},
        gauge:{
          axis: {range: [null,10], tickcolor: "black"},
          steps:[
@@ -146,8 +148,8 @@ var bubbleLayout = {
     
 // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 300,
-      height: 200,
+      width: 800,
+      height: 600,
      
     };
 
