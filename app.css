@@ -20,8 +20,11 @@ h1 {font-family: "Permanent Marker", cursive}
 
 }
 
-.border {
+.footer {
     background-image: url("/plotlydiploy/images/wimpy_burger.png");
-    background-size: 30%,30%;
-    background-repeat: space;
+    background-size: 25%,25%;
+    background-repeat:repeat-x;
+    position: fixed;
+    bottom: 0;
+    width: 100%
 }
