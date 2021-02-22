@@ -93,6 +93,7 @@ function buildCharts(sample) {
       y: otu_10.map(otu_id=> `OTU ${otu_id}`).reverse(),
       text: otu_labels,
       type: "bar",
+      color: ""
       orientation: "h" 
     }];
 
@@ -112,7 +113,8 @@ var bubbleData = [{
     mode: 'markers',
     marker: {
         size: sample_values,
-        color: otu_ids
+        color: otu_ids,
+        line: {colorscale: 'YiGnBu'}
     },
    type:'scatter'
 }];
@@ -131,18 +133,18 @@ var bubbleLayout = {
        type: "indicator",
        mode: "gauge+number",
        value: parseFloat(wash),
-       title: {
-         text: "Belly Button Washing Frequency", font: {size:20},
+       title: "Belly Button Washing Frequency",
+       annotations: {
          text: "Scrubs per Week", font: {size: 16}},
        gauge:{
          axis: {range: [null,10]},
          bar:{color:"black"},
          steps:[
-           {range: [0,2], color: "red"},
-           {range: [2,4], color: "orange"},
-           {range: [4,6], color: "yellow"},
-           {range: [6,8], color: "greenyellow"},
-           {range: [8,10], color: "green"}
+           {range: [0,2]},
+           {range: [2,4]},
+           {range: [4,6]},
+           {range: [6,8]},
+           {range: [8,10]}
          ]
        },
      }
@@ -153,7 +155,7 @@ var bubbleLayout = {
     var gaugeLayout = { 
       width: 600,
       height: 400,
-     
+      colorscale = "Jets"
     };
 
 // 6. Use Plotly to plot the gauge data and layout.
